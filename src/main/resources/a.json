@@ -1,0 +1,55 @@
+{
+  "name": "绝对",
+  "key":"juedui",
+  "url": "https://www.jdlingyu.mobi/",
+  "tags": [
+    {"name": "女神", "url": "https://www.jdlingyu.mobi/tuji/hentai/gctt"},
+
+    {"name": "清新", "url": "https://www.jdlingyu.mobi/tuji/hentai/gctt"}
+  ],
+  "pages": {
+    "element": "body > div.content > div.primary-home > div.main > div.grid-bor > div.pos-r pd10 post-list box mar10-b content-card grid-item > div.pos-r cart-list" ,
+    "name": {
+      "element": "preview thumb-in > a",
+      "attr": "@text"
+    },
+    "url": {
+      "element": "preview thumb-in > a",
+      "attr": "href",
+      "needMerge": false
+    },
+    "nextPageUrlMode": {
+      "mode": "add",
+      "replaceSearchValue": ".html",
+      "replaceValue": "_{page}.html",
+      "addValue": "{page}.html"
+    },
+    "lastPage": {
+      "element": "#pages > a",
+      "minPageLength": 2,
+      "attr": "@text",
+      "descIndex": 2,
+      "isNeedSplit": false,
+      "splits": []
+    }
+  },
+  "imgs": {
+    "element": "#masthead > div.top-menu-parent > div > div > div > p > a > img",
+    "nextPageUrlMode": {
+      "incrementMode": "page",
+      "mode": "replace",
+      "replaceSearchValue": ".html",
+      "replaceValue": "_{page}.html",
+      "addValue": "{page}.html"
+    },
+    "lastPage": {
+      "element": "#pages > a",
+      "minPageLength": 2,
+      "attr": "@text",
+      "descIndex": 2,
+      "isNeedSplit": false,
+      "splits": []
+    }
+  },
+  "supportReptileVersion": 1
+},
